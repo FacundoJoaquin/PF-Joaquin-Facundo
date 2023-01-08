@@ -1,0 +1,1332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Anek Devanagari', sans-serif;
+    font-size: 18px;
+	background-color: #FFF7E9;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 5px 10%;
+
+	/**border-bottom: 1px solid #5F9DF7;**/
+}
+header .logoimg {
+	height: 125px;
+	width: auto;
+	cursor: pointer;
+}
+
+header .navlinks {
+	list-style: none;
+}
+.navlinks {
+	display: flex;
+	flex-wrap: nowrap;
+}
+header .navlinks li {
+	display: inline-block;
+	padding: 0 10px;
+	
+}
+header .navlinks li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #5F9DF7;
+	font-family: 'Ardeco', sans-serif;
+}
+
+header .navlinks li:hover {
+	transform: scale(1.1);
+}
+header .navlinks li a:hover {
+	color: #1746A2;
+}
+.logoimg:hover {
+	transform: scale(1.1);
+	transition: 1.5s;
+}
+/**aca termina el navbar**/
+/** empieza el index**/
+h1:hover {
+	transform: scale(1.1);
+	transition: 1.5s;
+	color: #1746A2;
+}
+body h1 {
+	text-align: center;
+	font-size: 30px;
+	color: #5F9DF7;
+}
+
+.section-index h3 {
+	text-align: center;
+	color: #5F9DF7
+}
+.section-index p {
+	color: #5F9DF7;
+	text-align: center;
+}
+.h2-index {
+	text-align: center;
+	color: #5F9DF7;
+}
+.section-index {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"whales datos trekk"
+	"m1 pingu c1";
+}
+.div-whales {
+	grid-area: whales;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-whales img {
+	width: 33vw;
+}
+.whal-mob {
+	display: none;
+}
+.img-mobile {
+	display: none;
+}
+.p-mob {
+	display: none;
+}
+.datos-mobile {
+	display: none;
+}
+.but-mob {
+	display: none;
+}
+.div-trekking {
+	grid-area: trekk;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.div-trekking img {
+	width: 33vw;
+}
+.div-pinguinos {
+	grid-area: pingu;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.div-pinguinos img {
+	width: 100%;
+}
+.datos-index {
+	grid-area: datos;
+	width: 33vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.datos-index h3 {
+	font-size: 24px;
+	color: #1746A2;
+}
+.datos-index p {
+	font-size: 21px;
+}
+.div-madryn {
+	grid-area: m1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.div-madryn p {
+	border-top: 1px solid #5F9DF7;
+}
+.div-madryn img {
+	width: 50px;
+
+}
+.div-clientes{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.div-clientes .cliente1 {
+	grid-area: c1;
+}
+.client {
+	width: 60%;
+	margin: auto;
+}
+/**termina el index**/
+/**empieza contacto**/
+.contact-section {
+	display: flex;
+	justify-content:center;
+	gap:20px;
+}
+
+.div-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-h2 {
+	text-align:center;
+	color: #5f9df7;
+	font-size: 30px;
+}
+
+.section-info {
+	margin-right: 33vw;
+	width: 100%;
+}
+.h3-client {
+	color: #1746A2;
+	width: auto;
+}
+.div-datos-texto {
+	color: #5F9DF7;
+	text-align: left;
+	font-size: 30px;
+	margin-left: 8vw;
+}
+.ubic-dates {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.div-clientes {
+	border-bottom: 1px solid #1746A2;
+}
+.contact-section form input {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+}
+.contact-section form select {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+}
+.contact-section form textarea {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+	resize: none;
+}
+/** empieza alquiler de autos**/
+.h2-cars {
+	display: none;
+}
+.h3-cars {
+	color: #1746A2;
+	font-size: 40px;
+	text-align: center;
+}
+.corola-img {
+	width: 100%;
+	border-radius: 0px 0px 30px 30px;
+}
+.div-corola2 {
+	display: flex;
+}
+.corola-img:hover {
+	width: 100%;
+	border-radius: 90px 90px;
+	transition: 2s;
+}
+.corola-text {
+	font-size: 25px;
+	width: 50vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+.corola-text b {
+	font-size: 35px;
+	color: #1746A2
+}
+
+.img-corolla-mob {
+	display: none;
+}
+.div-focus {
+	display: flex;
+}
+.focus-text {
+	font-size: 25px;
+	width: 100vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+.focus-text b {
+	font-size: 35px;
+	color: #1746A2
+}
+.div-carinput {
+	margin: auto;
+}
+.focus-img {
+	width: 100%;
+	border-radius: 0px 0px 30px 30px;
+}
+.focus-img:hover {
+	width: 100%;
+	border-radius: 90px 90px;
+	transition: 2s;
+}
+.div-focus {
+	display: flex;
+}
+.focus-mob {
+	display: none;
+}
+.img-focus-mob {
+	display: none;
+}
+.focus-text {
+	font-size: 25px;
+	width: 50vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+/**termina alquiler de auto**/
+/**empieza nosotros**/
+.h2-who {
+	font-size: 25px;
+	color: #1746A2;
+	text-align: center;
+}
+.family-container {
+	display: flex;
+}
+.family-mob {
+	display: none;
+}
+
+/* .family-container:hover {
+	margin-left: 10vw;
+	transition: 4s;
+	font-size: 30px;
+	transition: 4s;
+	color: #1746A2;
+} */
+.family-container p {
+	margin: auto;
+	margin-left: 10px;
+	color: #5F9DF7;
+	text-align: center;
+}
+.link-who{
+	text-decoration: none;
+	color: #1746A2;
+}
+.who-whales {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.who-whales p {
+	color: #5F9DF7;
+	text-align: center;
+}
+.who-mob1 , .who-mob2 , .who-mob3 {
+	display: none;
+}
+/**termina nosotros**/
+/** empieza excursiones**/
+.sect-mobile {
+	display: none;
+}
+.excursion-section {
+	width: 100%;
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: repeat(2,1fr);
+	justify-items: center;
+	grid-template-areas: 
+	"card1 card1 card2 card2 card3 card3"
+	"card4 card4 card4 card5 card5 card5";
+}
+.card1 {
+	grid-area: card1;
+}
+.card2 {
+	grid-area: card2;
+}
+.card3 {
+	grid-area: card3;
+}
+.card4 {
+	grid-area: card4;
+}
+.card5 {
+	grid-area: card5;
+}
+.excursion-section h2 {
+	color: #1746A2;
+}
+.excursion-section .card1 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card1:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card1 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card1 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card1 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card1:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.a-excursion {
+	font-weight: 550;
+	text-decoration: none;
+	color: #5F9DF7;
+}
+.a-excursion:hover {
+	color: #1746A2;
+	text-decoration: underline;
+	transition: 1s;
+}
+.excursion-section .card2 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+
+.excursion-section .card2:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card2 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card2 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card2 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card2:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card3 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card3:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card3 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card3 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card3 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card3:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card4 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card4:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card4 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card4 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card4 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card4:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card5 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card5:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card5 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card5 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card5 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card5:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.safe-travel {
+	display: flex;
+	margin: auto;
+}
+/**termina excursiones**/
+footer {
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+
+footer .footer-img img {
+	height: 75px;
+	align-items: flex-start;
+
+}
+.but-mob{
+	display: none;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-mobile {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-cars {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-cars:hover {
+	transform: scale(1.5);
+	transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	header .navlinks li a {
+		font-size: 18px
+	}
+	
+	.footer-img {
+		display: none;
+	}
+	.navlinks {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+/* empieza index */
+	.section-index {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-index h1 {
+		font-size: 18px;
+	}
+	.div-whales img {
+		width: 95vw;
+	}
+	.p-mob {
+		display: inline;
+		margin: 10px 0;
+	}
+	.p-mob br {
+		display: none;
+	}
+	.datos-index {
+
+		width: 90vw;
+		padding: 20px;
+		margin: 20px;
+	}
+	.datos-index h3 {
+		color: #1746A2;
+		font-size: 20px;
+	}
+	.datos-index p {
+		font-size: 16px;
+	}
+	.div-pinguinos {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.div-pinguinos input {
+		margin: 20px;
+	}
+	.div-trekking {
+		display: none;
+	}
+
+	.cliente1 {
+		display: grid;
+		grid-template-columns: 33vw;
+		grid-template-rows: repeat(2,4rem);
+		grid-template-areas: 
+		"cimg"
+		"cclient";
+	}
+	.cliente1 img {
+		grid-area: cimg;
+		margin: auto;
+	}
+	.client {
+		grid: cclient;
+	}
+	.clients {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		margin-bottom: 40px;
+	}
+	.section-index .myButton {
+		display: none;
+	}
+	.datos-mobile {
+		display: flex;
+		height: 200px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 30px;
+		margin-bottom: 50px;
+	}
+	.datos-mobile img {
+		height: 30px;
+		width: 30px;
+	}
+	.datos-mobile h3 {
+		color: #1746A2;
+	}
+	/* termina index */
+/* empieza excursiones */
+	.excursion-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.excursion-section .card1 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card2 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card3 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card4 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card5 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+
+/* termina excursiones */
+/* empieza contactos */
+	.contact-div {
+		display: none;
+	}
+	.div-form {
+		margin: auto;
+	}
+	.div-datos-texto {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.ubic-dates {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 5px 0;
+	}
+	.ubic-info {
+	width: 33px;	
+	}
+	.ubic-dates p {
+		text-align: center;
+	}
+	}
+/* termina contactos */
+/* empieza autos */
+	.h1-cars { 
+		font-size: 20px;
+	}
+	.h3-cars {
+		font-size: 18px;
+	}
+	.div-corola2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.corola-text {
+		font-size: 16px;
+		width: 100%;
+	}
+	.corola-text b {
+		font-size: 18px;
+	}
+	.div-carinput {
+		margin: 15px 0;
+	}
+	.div-focus {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.focus-text {
+		font-size: 16px;
+		width: 100%;
+	}
+	.focus-text b {
+		font-size: 18px;
+	}
+/* termina autos */
+
+@media screen and (max-width: 320px) {
+	main h1, h2 {
+		text-align: center;
+		font-size: 15px;
+		color: #1746A2;
+	}
+	header div .logoimg {
+		width: 100%;
+	}
+	header .navlinks li a{
+		font-size: 15px;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.navlinks {
+		width: 100vw;
+		border-bottom: 1px solid #1746A2;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	/* footer on */
+	footer {
+		margin-top: 15px;
+	}
+	.footer-img {
+		display: none;
+	}
+	/* footer off */
+
+	/* empieza el index */
+	.section-index {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-index .div-whales img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.whal-mob {
+		display: flex;
+	}
+
+	.whal-mob img {
+	margin: 0 10px;
+	}
+	.p-mob {
+		display: block;
+		font-size: 15px;
+	}
+	.myButton {
+		display: none;
+	}
+	.but-mob {
+		display: block;
+		margin: 10px 0;
+	}
+	.div-clientes, .div-madryn,.div-trekking, .div-pinguinos, .datos-index {
+		display: none;
+	}
+	.img-mobile {
+		display: flex;
+		justify-content: space-around;
+	}
+	.img-mob1, .img-mob2, .img-mob3 {
+		width: 30vw;
+	}
+	.datos-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.datos-mobile img {
+		height: 30px;
+		width: 30px;
+	}
+	.datos-mobile h3 {
+		color: #1746A2;
+	}
+	.datos-mobile h4 {
+		text-align: center;
+		color: #5F9DF7;
+	}
+	/**termina el index**/
+	/**empieza contacto**/
+	
+	.contact-div {
+		display: none;
+	}
+	
+	.contact-section {
+	
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+		"form";
+	}
+	.ubic-dates {
+		display: none;
+	}
+	.contact-section form {
+		grid-area: form;
+	}
+
+	.contact-section form input {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+
+	}
+	.contact-section form select {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+
+	}
+	.contact-section form textarea {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+	}
+
+	.but-mob {
+		align-self: center;
+	}
+	.section-info {
+		display: none;
+	}
+
+	/**termina el contacto*/
+	/**empieza autos*/
+	.h1-cars {
+		display: none;
+	}
+	.h2-cars {
+		display: flex;
+		justify-content: center;
+	}
+	.h3-cars{
+		font-size: 16px;
+	}
+	.img-corolla-mob {
+		display: grid;
+		grid-template-columns: repeat(3,67px);
+		grid-template-rows: repeat(2,67px);
+		grid-template-areas: 
+		"imgc1 . imgc3"
+		". imgc2 .";
+		grid-area: img-coroll; /**div de imagenes*/
+	}
+
+	.imgc1 {
+		grid-area: imgc1;
+	}
+	.imgc2 {
+		grid-area: imgc2;
+	}
+	.imgc3 {
+		grid-area: imgc3;
+	}
+	.div-corola div b {
+		font-size: 14px;
+	}
+	.div-corola div p{
+		font-size: 11px;
+	}
+	.div-corola2 {
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: 100px 134px 50px;
+		grid-template-areas: 
+		"corol-txt "
+		"img-coroll"
+		"corol-but";
+		justify-items: center;
+	}
+	.div-corola2 .div-carinput {
+		justify-self: center;
+	}
+	.corola-text {
+		grid: corol-txt;
+		width: 100vw;
+		margin-left: 30px;
+		text-align: center;
+		justify-self: center;
+	}
+	.div-corola2 .div-carinput {
+		grid-area: corol-but;
+		margin: 10px 0;
+	}
+	/**termina corolla empieza focus*/
+	.div-focus {
+		width: 100vw;
+	}
+	.div-focus div b {
+		font-size: 14px;
+	}
+	.div-focus div p{
+		font-size: 11px;
+	}
+	.div-focus {
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: 100px 134px 50px;
+		grid-template-areas: 
+		"focus-txt "
+		"img-focus"
+		"foc-but";
+		justify-items: center;
+	}
+
+	.div-focus .div-carinput {
+		grid-area: foc-but;
+		margin: 10px 0;
+	}
+	.focus-text {
+		grid-area: focus-txt;
+		width: 100vw;
+	}
+	.img-focus-mob {
+		display: grid;
+		grid-template-columns: repeat(3,67px);
+		grid-template-rows: repeat(2,67px);
+		grid-template-areas: 
+		"imgf1 . imgf3"
+		". imgf2 .";
+		grid-area: img-focus; /**div de imagenes*/
+	}
+
+	.imgf1 {
+		grid-area: imgf1;
+	}
+	.imgf2 {
+		grid-area: imgf2;
+	}
+	.imgf3 {
+		grid-area: imgf3;
+	}
+/* 	termina autos empieza excursiones */
+.mob-exc-h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.excursion-section {
+	display: none;
+}
+.sect-mobile {
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-rows: repeat(5,400px);
+	grid-template-areas: 
+	"mwhal"
+	"msnork"
+	"mtrek"
+	"mping"
+	"mtransf";
+}
+
+.mobile-whales {
+	grid-area: mwhal;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.whales-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+
+}
+.whales-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.whales-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.whales-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+
+.snorkell-mob {
+	grod-area: msnork;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.snorkell-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.snorkell-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.snorkell-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.snorkell-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+
+.mobile-trekking {
+	grid-area: mtrek;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.trekking-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.trekking-mob-p .ancla-mob{	
+	width: 35px;
+	align-self: center;
+}
+.trekking-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.trekking-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+.mobile-pinguinos {
+	grid-area: mping;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.pinguinos-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.pinguinos-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.pinguinos-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.pinguinos-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+.mobile-transfer {
+	grid-area: mtransf;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-bottom: -20px;
+}
+.transfer-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.transfer-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.transfer-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.transfer-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+.sect-img-mob {
+	border-radius: 10px;
+}
+
+/* termina pages excursiones */
+/* empieza pages quienes somos */
+.family {
+	display: none;
+}
+.family-mob {
+	display: flex;
+}
+.family-mob img {
+	width: 100%;
+}
+.family-container {
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.who-whales1 , .who-whales2 {
+	display: none;
+}
+.mobile-img {
+	display: grid;
+	grid-template-columns: 120px;
+	grid-template-rows: repeat(4,150px);
+	grid-template-areas: 
+	"wmob1"
+	"wmob2"
+	"wmob3"
+	"but-mob";
+}
+
+.who-mob1 {
+	display: grid;
+	grid-area: wmob1;
+
+}
+.who-mob2 {
+	display: grid;
+	grid-area: wmob2;
+}
+.who-mob3 {
+	display: grid;
+	grid-area: wmob3;
+}
+.who-whales .but-mob .myButton-mobile {
+	grid-area: but-mob;
+}
+.who-whales p{
+	display: none;
+}
+/* 
+.family-container p {
+	margin: auto;
+}
+.link-who {
+	display: none;
+}
+.who-whales {
+	width: 100%;
+	margin: auto;
+}
+
+.mobile-img {
+	display: grid;
+	width: 100vw;
+	margin: auto;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas:
+	"wmob1 but-mob wmob2 "
+	".   wmob3   .";
+}*/
+
+/*
+
+
+ */
+/* termina pages quienes somos */
+}
+	
+
+/* termina excursiones */
