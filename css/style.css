@@ -242,6 +242,7 @@ body h1 {
 }
 .div-corola2 {
 	display: flex;
+	flex-direction: column;
 }
 .corola-img:hover {
 	width: 100%;
@@ -250,7 +251,7 @@ body h1 {
 }
 .corola-text {
 	font-size: 25px;
-	width: 50vw;
+	width: 100%;
 	color: #5F9DF7;
 	text-align: center;
 }
@@ -264,10 +265,13 @@ body h1 {
 }
 .div-focus {
 	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
 }
 .focus-text {
-	font-size: 25px;
-	width: 100vw;
+	font-size: 55px;
+	width: 100%;
 	color: #5F9DF7;
 	text-align: center;
 }
@@ -786,27 +790,27 @@ footer .footer-img img {
 		align-items: center;
 	}
 	.excursion-section .card1 {
-		height: 320px;
+		height: 360px;
 		border-radius: 5px;
 		border: 1px solid rgba(0, 0, 0, 0.274);
 	}
 	.excursion-section .card2 {
-		height: 320px;
+		height: 360px;
 		border-radius: 5px;
 		border: 1px solid rgba(0, 0, 0, 0.274);
 	}
 	.excursion-section .card3 {
-		height: 320px;
+		height: 360px;
 		border-radius: 5px;
 		border: 1px solid rgba(0, 0, 0, 0.274);
 	}
 	.excursion-section .card4 {
-		height: 320px;
+		height: 360px;
 		border-radius: 5px;
 		border: 1px solid rgba(0, 0, 0, 0.274);
 	}
 	.excursion-section .card5 {
-		height: 320px;
+		height: 360px;
 		border-radius: 5px;
 		border: 1px solid rgba(0, 0, 0, 0.274);
 	}
@@ -836,7 +840,7 @@ footer .footer-img img {
 	.ubic-dates p {
 		text-align: center;
 	}
-	}
+
 /* termina contactos */
 /* empieza autos */
 	.h1-cars { 
@@ -845,6 +849,7 @@ footer .footer-img img {
 	.h3-cars {
 		font-size: 18px;
 	}
+
 	.div-corola2 {
 		display: flex;
 		flex-direction: column;
@@ -862,7 +867,7 @@ footer .footer-img img {
 	}
 	.div-focus {
 		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
 	}
 	.focus-text {
@@ -873,7 +878,7 @@ footer .footer-img img {
 		font-size: 18px;
 	}
 /* termina autos */
-
+}
 @media screen and (max-width: 320px) {
 	main h1, h2 {
 		text-align: center;
