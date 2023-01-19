@@ -1,0 +1,1768 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Anek Devanagari', sans-serif;
+    font-size: 18px;
+}
+/* header {
+	background-color: #fff7e9;
+	position: fixed;
+	top: 0; 
+	width: 100%;
+	z-index: 5000;
+	border-bottom: 1px solid #555;
+} */
+#FF731D
+#FFF7E9
+#5F9DF7
+#1746A2
+/* empieza el baner */
+.d-baner {
+	display: flex;
+	padding: 10px;
+}
+.d-baner img {
+	width: 100%;;
+}
+.p-baner1 {
+	background-color: transparent;
+	position: absolute;
+	top: 11.5rem;
+	left: 1.5rem;
+	color: #ffffff;
+	font-size: 40px;
+	font-family: 'Dancing Script', cursive;
+	cursor: default;
+}
+.p-baner2 {
+	background-color: transparent;
+	position: absolute;
+	top: 13.3rem;
+	left: 2rem;
+	color: #FFF7E9;
+	font-family: 'Dancing Script', cursive;
+	font-size: 60px;
+	font-weight: 300;
+	cursor: default;
+}
+
+
+/* termina baner y empieza info section */
+.h1-ind {
+	font-size: 50px;
+	margin-top: 20px;
+	color: #000;
+	font-weight: 700;
+	cursor: default;
+}
+.info {
+	display: flex;
+	height: 200px;
+	overflow: hidden;
+	margin-top: 30px;
+	border-bottom: 1px solid #000;
+}
+.info1 {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 20px;
+}
+.info1 p:first-child{
+	font-family: 'ardeco', sans-serif;
+	font-size: 3em;
+	z-index: 10;
+	display: block;
+	width: 350px;
+}
+.info1 p:nth-child(2){
+	font-size: 9rem;
+	font-family: 'Londrina Outline', sans-serif;
+	position: absolute;
+	color: #FF731D;
+	opacity: 10%;
+	display: block;
+}
+.info1:hover p:first-child {
+	opacity: 0%;
+	transition: ease-in-out 1.5s;
+}
+.info1:hover p:last-child {
+	opacity: 100%;
+	transition: ease-in-out 1.5s;
+}
+
+.info2{
+	width: 50%;
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+/* temrina info y empieza cards index */
+.h2-i {
+	text-align: center;
+	font-size: 3rem;
+	font-weight: 900;
+	color: #000;
+	margin-top: 20px;
+}
+.h3-mob {
+	display: none;
+}
+.img-card  {
+	background-color: red;
+	width: 200px;
+	height: 220px;
+}
+
+.excursiones-cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 100px 0 30px;
+	gap: 5px;
+}
+.card-index {
+	width: 350px;
+	background: radial-gradient(#111 50%, #000 100%);
+	overflow: hidden;
+	position: relative;
+}
+.card-index img {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	transform: scale(1.3);
+	transition: all 0.3s ease-in-out;
+}
+.card-index:hover img  {
+	transform: scale(1.1) translateY(-20px);
+	opacity: 0.3;
+}
+.hidden { /* carta escondida */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 15px;
+	text-align: center;
+	color: #fff; /* color de la letra */
+	font-size: 18px;
+}
+.hidden h3 {
+	font-weight: 700;
+	font-size: 32px;
+	margin: 0 0 20px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-in-out;
+}
+.hidden p {
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-in-out 0.2s;
+}
+.hidden a {
+	color: #fff;
+	background: #5F9DF7; /* color del boton */
+	display: inline-block;
+	padding: 7px 25px;
+	text-decoration: none;
+	border-radius: 5px;
+	transform: translateY(30px);
+	opacity: 0;
+	transition: all 0.3s ease-in-out 0.4s;
+}
+.hidden a:hover {
+	background: #1746A2; /* color del boton con hover  mas oscuro*/
+}
+.card-index:hover .hidden h3{
+	opacity: 1;
+	transform: translateY(0);
+}
+.card-index:hover .hidden p{
+	opacity: 1;
+	transform: translateY(0);
+}
+.card-index:hover .hidden a{
+	opacity: 1;
+	transform: translateY(0);
+}
+/* termina index cards section y empieza pagos*/
+.pagos {
+	height: 120px;
+	margin-top: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	box-shadow: 0px 5px 8px -3px #777;}
+.pagos img {
+	width: 100%;
+}
+.pagos h4 {
+	font-size: 2rem;
+	font-weight: 550;
+}
+/* termina pagos y empieza info*/
+.index-info-1 {
+	margin: 30px 0;
+}
+.index-info-1 h4 {
+	text-align: center;
+	color: #FF731D;
+	font-weight: 600;
+}
+.infoo {
+	width: 100%;
+	height: 100vh;
+	padding: 30px;
+	gap: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.map-info {
+	width: 50%;
+}
+.calendar-info {
+	width: 50%;
+}
+/* termina info y empieza ask*/
+.fast-ask {
+	margin: 30px 0;
+}
+.ask {
+	height: 100px;
+	background-color: #072340;
+	display: flex;
+	align-items: center;
+	border: 1px solid rgba(51, 51, 51, 0.534);
+	border-radius: 5px;
+	flex-wrap: wrap;
+}
+
+.ask p {
+	color: #fff;
+	font-weight: 500;
+	margin: auto;
+	font-size: 1.5rem;
+	cursor: default;
+}
+.ask form {
+	margin: auto;
+	width: 60%;
+	display: flex;
+	justify-content: flex-end;
+}
+.ask form input {
+	margin: 0 10px;
+}
+.ask form input:first-child {
+	width: 80px;
+}
+.ask form input:nth-child(2) {
+	width: 80px;
+}
+.ask form input:last-child {
+	width: 120px;
+	margin-right: 30px;
+}
+.ask form input:focus {
+	outline: none;
+}
+/* termina ask empieza clientes*/
+.clientes {
+	margin: 30px 0;
+}
+.clientes h3{
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.5rem;
+	margin: 30px 0;
+}
+.clientes span {
+	font-family: 'Anek Devanagari', sans-serif;
+	font-size: 1.5rem;
+	text-decoration: underline 2px solid #FF731D;
+}
+.baner-clientes {
+	display: flex;
+	margin: auto;
+	width: 800px;
+	align-items: flex-end;
+	gap: 20px;
+	cursor:default;
+}
+
+.baner-clientes p:first-child {
+	opacity: 100;
+	position: relative;
+	left: 2%;
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: #222;
+	justify-self: flex-start;
+}
+.baner-clientes p:last-child {
+	position: absolute;
+	left: 35%;
+	font-family: "londrina outline", sans-serif;
+	font-size: 3rem;
+	margin-top: 10px;
+	opacity: 0;
+	color: #FF731D;
+	font-weight: 400;
+	justify-self: flex-end;
+}
+.baner-clientes:hover p:first-child {
+	opacity: 0;
+	transition: ease-out 3s;
+}
+.baner-clientes:hover p:last-child {
+	opacity: 100;
+	transition: 1.5s;
+}
+.cliente {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(100px, 300px));
+	grid-template-rows: 300px;
+	grid-template-areas: 
+	"cl1 cl2 cl3";
+	justify-content: space-around;
+	align-items: center;
+}
+.cliente div img {
+	margin-bottom: 10px;
+}
+.cliente div:first-child {
+	grid-area: cl1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cliente div:nth-child(2){
+	grid-area: cl2;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cliente div:last-child{
+	grid-area: cl3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cliente div p {
+	text-align: center;
+}
+/* termina clientes */
+/* empieza footer */
+.borde-footer img {
+	width: 100%;
+}
+.redes-container h4 {
+	text-align: center;
+	color: #FFF7E9;
+	font-family: 'Dancing Script', cursive;
+	font-size: 3.5rem;
+	cursor: default;
+}
+.redes-container {
+	height: 400px;
+	background-color: #072340;
+}
+.redes-logos {
+	display: flex;
+	padding: 4rem;
+	justify-content: center;
+	gap: 2rem;
+}
+.redes-div {
+	height: 7rem;
+	width: 7rem;
+	border-radius: 50%;
+	background-color: white;
+	border: 2px solid #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* termina footer */
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 5px 10%;
+
+	/**border-bottom: 1px solid #5F9DF7;**/
+}
+header .logoimg {
+	height: 125px;
+	width: auto;
+	cursor: pointer;
+}
+
+header .navlinks {
+	list-style: none;
+}
+.navlinks {
+	display: flex;
+	flex-wrap: nowrap;
+}
+header .navlinks li {
+	display: inline-block;
+	padding: 0 10px;
+	
+}
+header .navlinks li a {
+	font-size: 25px;
+	text-decoration: none;
+	color: #5F9DF7;
+	font-family: 'Ardeco', sans-serif;
+}
+
+header .navlinks li:hover {
+	transform: scale(1.1);
+}
+header .navlinks li a:hover {
+	color: #1746A2;
+}
+.logoimg:hover {
+	transform: scale(1.1);
+	transition: 1.5s;
+}
+/**aca termina el navbar**/
+/** empieza el index**/
+h1:hover {
+	transform: scale(1.1);
+	transition: 1.5s;
+	color: #1746A2;
+}
+body h1 {
+	text-align: center;
+	font-size: 30px;
+	color: #5F9DF7;
+}
+
+.section-index h3 {
+	text-align: center;
+	color: #5F9DF7
+}
+.section-index p {
+	color: #5F9DF7;
+	text-align: center;
+}
+.h2-index {
+	text-align: center;
+	color: #5F9DF7;
+}
+.section-index {
+	max-width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-areas: 
+	"whales datos trekk"
+	"m1 pingu c1";
+}
+.div-whales {
+	grid-area: whales;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.div-whales img {
+	width: 33vw;
+}
+.whal-mob {
+	display: none;
+}
+.img-mobile {
+	display: none;
+}
+.p-mob {
+	display: none;
+}
+.datos-mobile {
+	display: none;
+}
+.but-mob {
+	display: none;
+}
+.div-trekking {
+	grid-area: trekk;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.div-trekking img {
+	width: 33vw;
+}
+.div-pinguinos {
+	grid-area: pingu;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.div-pinguinos img {
+	width: 100%;
+}
+.datos-index {
+	grid-area: datos;
+	width: 33vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.datos-index h3 {
+	font-size: 24px;
+	color: #1746A2;
+}
+.datos-index p {
+	font-size: 21px;
+}
+.div-madryn {
+	grid-area: m1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+.div-madryn p {
+	border-top: 1px solid #5F9DF7;
+}
+.div-madryn img {
+	width: 50px;
+
+}
+.div-clientes{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.div-clientes .cliente1 {
+	grid-area: c1;
+}
+.client {
+	width: 60%;
+	margin: auto;
+}
+/**termina el index**/
+/**empieza contacto**/
+.contact-section {
+	display: flex;
+	justify-content:center;
+	gap:20px;
+}
+
+.div-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-h2 {
+	text-align:center;
+	color: #5f9df7;
+	font-size: 30px;
+}
+
+.section-info {
+	margin-right: 33vw;
+	width: 100%;
+}
+
+.div-datos-texto {
+	color: #5F9DF7;
+	text-align: left;
+	font-size: 30px;
+	margin-left: 8vw;
+}
+.ubic-dates {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	margin-bottom: 10px;
+}
+.div-clientes {
+	border-bottom: 1px solid #1746A2;
+}
+.contact-section form input {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+}
+.contact-section form select {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+}
+.contact-section form textarea {
+	background-color: #dfdfdf;
+	margin: 5px;
+	border: 1px solid black;
+	resize: none;
+}
+/** empieza alquiler de autos**/
+.h2-cars {
+	display: none;
+}
+.h3-cars {
+	color: #1746A2;
+	font-size: 40px;
+	text-align: center;
+}
+.corola-img {
+	width: 100%;
+	border-radius: 0px 0px 30px 30px;
+}
+.div-corola2 {
+	display: flex;
+}
+.corola-img:hover {
+	width: 100%;
+	border-radius: 90px 90px;
+	transition: 2s;
+}
+.corola-text {
+	font-size: 25px;
+	width: 50vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+.corola-text b {
+	font-size: 35px;
+	color: #1746A2
+}
+
+.img-corolla-mob {
+	display: none;
+}
+.div-focus {
+	display: flex;
+}
+.focus-text {
+	font-size: 25px;
+	width: 100vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+.focus-text b {
+	font-size: 35px;
+	color: #1746A2
+}
+.div-carinput {
+	margin: auto;
+}
+.focus-img {
+	width: 100%;
+	border-radius: 0px 0px 30px 30px;
+}
+.focus-img:hover {
+	width: 100%;
+	border-radius: 90px 90px;
+	transition: 2s;
+}
+.div-focus {
+	display: flex;
+}
+.focus-mob {
+	display: none;
+}
+.img-focus-mob {
+	display: none;
+}
+.focus-text {
+	font-size: 25px;
+	width: 50vw;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+/**termina alquiler de auto**/
+/**empieza nosotros**/
+.h2-who {
+	font-size: 25px;
+	color: #1746A2;
+	text-align: center;
+}
+.family-container {
+	display: flex;
+}
+.family-mob {
+	display: none;
+}
+
+/* .family-container:hover {
+	margin-left: 10vw;
+	transition: 4s;
+	font-size: 30px;
+	transition: 4s;
+	color: #1746A2;
+} */
+.family-container p {
+	margin: auto;
+	margin-left: 10px;
+	color: #5F9DF7;
+	text-align: center;
+}
+.link-who{
+	text-decoration: none;
+	color: #1746A2;
+}
+.who-whales {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.who-whales p {
+	color: #5F9DF7;
+	text-align: center;
+}
+.who-mob1 , .who-mob2 , .who-mob3 {
+	display: none;
+}
+/**termina nosotros**/
+/** empieza excursiones**/
+.sect-mobile {
+	display: none;
+}
+.excursion-section {
+	width: 100%;
+	display: grid;
+	height: 100%;
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: repeat(2,1fr);
+	justify-items: center;
+	grid-template-areas: 
+	"card1 card1 card2 card2 card3 card3"
+	"card4 card4 card4 card5 card5 card5";
+}
+.card1 {
+	grid-area: card1;
+}
+.card2 {
+	grid-area: card2;
+}
+.card3 {
+	grid-area: card3;
+}
+.card4 {
+	grid-area: card4;
+}
+.card5 {
+	grid-area: card5;
+}
+.excursion-section h2 {
+	color: #1746A2;
+}
+.excursion-section .card1 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card1:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card1 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card1 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card1 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card1:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.a-excursion {
+	font-weight: 550;
+	text-decoration: none;
+	color: #5F9DF7;
+}
+.a-excursion:hover {
+	color: #1746A2;
+	text-decoration: underline;
+	transition: 1s;
+}
+.excursion-section .card2 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+
+.excursion-section .card2:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card2 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card2 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card2 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card2:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card3 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card3:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card3 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card3 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card3 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card3:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card4 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card4:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card4 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card4 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card4 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card4:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.excursion-section .card5 {
+	width: 300px;
+	height: 420px;
+	border-radius: 6px;
+	box-shadow: o 2px 2px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	margin: 20px;
+	text-align: center;
+	transition: all 0.40s;
+}
+.excursion-section .card5:hover {
+	transform: translateY(-15px);
+	box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+.excursion-section .card5 img {
+	width: 330px;
+	height: 220px;
+}
+.excursion-section .card5 h3 {
+	font-size: 25px;
+	color: #1746A2;
+}
+.excursion-section .card5 p{
+	color: #5F9DF7;
+	text-decoration: none;
+	padding: 0 20px;
+	font-weight: 300;
+	font-size: 15px;
+	text-align: center;
+}
+.excursion-section .card5:hover {
+	width: 450px;
+	height: 400px;
+	transition: 1s;
+}
+.safe-travel {
+	display: flex;
+	margin: auto;
+}
+/**termina excursiones**/
+
+
+.but-mob{
+	display: none;
+}
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-mobile {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-cars {
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:linear-gradient(to bottom, #c54040 5%, #c54040 100%);
+	background-color:#c54040;
+	border-radius:3px;
+	border:1px solid #c54040;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.myButton-cars:hover {
+	transform: scale(1.5);
+	transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		display: flex;
+		flex-direction: column;
+	}
+	header .navlinks li a {
+		font-size: 18px
+	}
+	
+	.navlinks {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	/* empeiza el footer */
+	.redes-container {
+		height: max-content;
+	}
+	.redes-logos {
+		flex-wrap: wrap;
+	}
+
+	/* termina el footer */
+/* empieza index */
+	.p-baner1 , .p-baner2 {
+	display: none;
+	}
+	.info {
+		flex-direction: column;
+		height: 300px;
+		align-items: flex-end;
+	}
+	.info1 p:first-child {
+		display: none;
+
+	}
+	.info1 p:last-child {
+		flex-wrap: nowrap;
+		text-align: center;
+		font-size: 5rem;
+		font-weight: 500;
+		opacity: 100;
+	}
+	.info2{
+		margin-top: 30px;
+		width: 100%;
+	}
+	.info2 p {
+		text-align: center;
+	}
+	.excursiones-cards {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.pagos {
+		display: none;
+	}
+	.infoo {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: center;
+		height: max-content;
+	}
+	.infoo img:first-child {
+		display: none;
+	}
+	.infoo img {
+		width: 100%;
+	}
+	.fast-ask {
+		display: none;
+	}
+	.cliente {
+		grid-template-columns: 300px;
+		grid-template-rows: repeat(3, 1fr);
+		grid-template-areas: 
+		"cl1"
+		"cl2"
+		"cl3";
+	}
+
+/* index viejo	.section-index {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-index h1 {
+		font-size: 18px;
+	}
+	.div-whales img {
+		width: 95vw;
+	}
+	.p-mob {
+		display: inline;
+		margin: 10px 0;
+	}
+	.p-mob br {
+		display: none;
+	}
+	.datos-index {
+
+		width: 90vw;
+		padding: 20px;
+		margin: 20px;
+	}
+	.datos-index h3 {
+		color: #1746A2;
+		font-size: 20px;
+	}
+	.datos-index p {
+		font-size: 16px;
+	}
+	.div-pinguinos {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.div-pinguinos input {
+		margin: 20px;
+	}
+	.div-trekking {
+		display: none;
+	}
+
+	.cliente1 {
+		display: grid;
+		grid-template-columns: 33vw;
+		grid-template-rows: repeat(2,4rem);
+		grid-template-areas: 
+		"cimg"
+		"cclient";
+	}
+	.cliente1 img {
+		grid-area: cimg;
+		margin: auto;
+	}
+	.client {
+		grid: cclient;
+	}
+	.clients {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+		margin-bottom: 40px;
+	}
+	.section-index .myButton {
+		display: none;
+	}
+	.datos-mobile {
+		display: flex;
+		height: 200px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 30px;
+		margin-bottom: 50px;
+	}
+	.datos-mobile img {
+		height: 30px;
+		width: 30px;
+	}
+	.datos-mobile h3 {
+		color: #1746A2;
+	} */
+	/* termina index */
+/* empieza excursiones */
+	.excursion-section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.excursion-section .card1 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card2 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card3 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card4 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+	.excursion-section .card5 {
+		height: 320px;
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.274);
+	}
+
+/* termina excursiones */
+/* empieza contactos */
+	.contact-div {
+		display: none;
+	}
+	.div-form {
+		margin: auto;
+	}
+	.div-datos-texto {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+	.ubic-dates {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 5px 0;
+	}
+	.ubic-info {
+	width: 33px;	
+	}
+	.ubic-dates p {
+		text-align: center;
+	}
+	}
+/* termina contactos */
+/* empieza autos */
+	.h1-cars { 
+		font-size: 20px;
+	}
+	.h3-cars {
+		font-size: 18px;
+	}
+	.div-corola2 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.corola-text {
+		font-size: 16px;
+		width: 100%;
+	}
+	.corola-text b {
+		font-size: 18px;
+	}
+	.div-carinput {
+		margin: 15px 0;
+	}
+	.div-focus {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.focus-text {
+		font-size: 16px;
+		width: 100%;
+	}
+	.focus-text b {
+		font-size: 18px;
+	}
+/* termina autos */
+
+@media screen and (max-width: 320px) {
+	main h1, h2 {
+		text-align: center;
+		font-size: 15px;
+		color: #1746A2;
+	}
+	header div .logoimg {
+		width: 100%;
+	}
+	header .navlinks li a{
+		font-size: 15px;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+
+	}
+	.navlinks {
+		width: 100vw;
+		border-bottom: 1px solid #1746A2;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+.d-banner , .info , .excursiones-cards , .pagos , .index-info-1 , .fast-ask , .clientes , .h2-i {
+	display: none;
+}
+	.h1-ind {
+		color: #072340;
+	}
+	.h3-mob {
+		display: block;
+		font-size: 1rem;
+		text-align: center;
+	}
+	/* empieza el index */
+	.section-index {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-index .div-whales img{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.whal-mob {
+		display: flex;
+	}
+
+	.whal-mob img {
+	margin: 0 10px;
+	}
+	.p-mob {
+		display: block;
+		font-size: 15px;
+	}
+	.myButton {
+		display: none;
+	}
+	.but-mob {
+		display: flex;
+		justify-content: center;
+		margin: 10px 0;
+	}
+	.div-clientes, .div-madryn,.div-trekking, .div-pinguinos, .datos-index {
+		display: none;
+	}
+	.img-mobile {
+		display: flex;
+		justify-content: space-around;
+	}
+	.img-mob1, .img-mob2, .img-mob3 {
+		width: 30vw;
+	}
+	.datos-mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.datos-mobile img {
+		height: 30px;
+		width: 30px;
+	}
+	.datos-mobile h3 {
+		color: #1746A2;
+	}
+	.datos-mobile h4 {
+		text-align: center;
+		color: #5F9DF7;
+	}
+	/**termina el index**/
+	/**empieza contacto**/
+	
+	.contact-div {
+		display: none;
+	}
+	
+	.contact-section {
+	
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+		"form";
+	}
+	.ubic-dates {
+		display: none;
+	}
+	.contact-section form {
+		grid-area: form;
+	}
+
+	.contact-section form input {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+
+	}
+	.contact-section form select {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+
+	}
+	.contact-section form textarea {
+		align-self: center;
+		width: 66vw;
+		margin-bottom: 15px;
+	}
+
+	.but-mob {
+		align-self: center;
+	}
+	.section-info {
+		display: none;
+	}
+
+	/**termina el contacto*/
+	/**empieza autos*/
+	.h1-cars {
+		display: none;
+	}
+	.h2-cars {
+		display: flex;
+		justify-content: center;
+	}
+	.h3-cars{
+		font-size: 16px;
+	}
+	.img-corolla-mob {
+		display: grid;
+		grid-template-columns: repeat(3,67px);
+		grid-template-rows: repeat(2,67px);
+		grid-template-areas: 
+		"imgc1 . imgc3"
+		". imgc2 .";
+		grid-area: img-coroll; /**div de imagenes*/
+	}
+
+	.imgc1 {
+		grid-area: imgc1;
+	}
+	.imgc2 {
+		grid-area: imgc2;
+	}
+	.imgc3 {
+		grid-area: imgc3;
+	}
+	.div-corola div b {
+		font-size: 14px;
+	}
+	.div-corola div p{
+		font-size: 11px;
+	}
+	.div-corola2 {
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: 100px 134px 50px;
+		grid-template-areas: 
+		"corol-txt "
+		"img-coroll"
+		"corol-but";
+		justify-items: center;
+	}
+	.div-corola2 .div-carinput {
+		justify-self: center;
+	}
+	.corola-text {
+		grid: corol-txt;
+		width: 100vw;
+		margin-left: 30px;
+		text-align: center;
+		justify-self: center;
+	}
+	.div-corola2 .div-carinput {
+		grid-area: corol-but;
+		margin: 10px 0;
+	}
+	/**termina corolla empieza focus*/
+	.div-focus {
+		width: 100vw;
+	}
+	.div-focus div b {
+		font-size: 14px;
+	}
+	.div-focus div p{
+		font-size: 11px;
+	}
+	.div-focus {
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: 100px 134px 50px;
+		grid-template-areas: 
+		"focus-txt "
+		"img-focus"
+		"foc-but";
+		justify-items: center;
+	}
+
+	.div-focus .div-carinput {
+		grid-area: foc-but;
+		margin: 10px 0;
+	}
+	.focus-text {
+		grid-area: focus-txt;
+		width: 100vw;
+	}
+	.img-focus-mob {
+		display: grid;
+		grid-template-columns: repeat(3,67px);
+		grid-template-rows: repeat(2,67px);
+		grid-template-areas: 
+		"imgf1 . imgf3"
+		". imgf2 .";
+		grid-area: img-focus; /**div de imagenes*/
+	}
+
+	.imgf1 {
+		grid-area: imgf1;
+	}
+	.imgf2 {
+		grid-area: imgf2;
+	}
+	.imgf3 {
+		grid-area: imgf3;
+	}
+/* 	termina autos empieza excursiones */
+.mob-exc-h1 {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.excursion-section {
+	display: none;
+}
+.sect-mobile {
+	display: grid;
+	grid-template-rows: 300px;
+	grid-template-rows: repeat(5,400px);
+	grid-template-areas: 
+	"mwhal"
+	"msnork"
+	"mtrek"
+	"mping"
+	"mtransf";
+}
+
+.mobile-whales {
+	grid-area: mwhal;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.whales-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+
+}
+.whales-mob-p 
+.whales-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.whales-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+
+.snorkell-mob {
+	grid-area: msnork;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.snorkell-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.snorkell-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.snorkell-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.snorkell-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+
+.mobile-trekking {
+	grid-area: mtrek;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.trekking-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.trekking-mob-p .ancla-mob{	
+	width: 35px;
+	align-self: center;
+}
+.trekking-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.trekking-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+.mobile-pinguinos {
+	grid-area: mping;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+	margin-bottom: 30px;
+}
+.pinguinos-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.pinguinos-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.pinguinos-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.pinguinos-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+
+
+.mobile-transfer {
+	grid-area: mtransf;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: center;
+	margin-bottom: 30px;
+	margin-bottom: -20px;
+}
+.transfer-mob-p {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+}
+.transfer-mob-p .ancla-mob {
+	width: 35px;
+	align-self: center;
+}
+.transfer-mob-p h3 {
+	font-size: 14px;
+	color: #1746A2;
+	text-align: center;
+}
+.transfer-mob-p p {
+	font-size: 12px;
+	color: #5F9DF7;
+	text-align: center;
+}
+.sect-img-mob {
+	border-radius: 10px;
+}
+
+/* termina pages excursiones */
+/* empieza pages quienes somos */
+.family {
+	display: none;
+}
+.family-mob {
+	display: flex;
+}
+.family-mob img {
+	width: 100%;
+}
+.family-container {
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.who-whales1 , .who-whales2 {
+	display: none;
+}
+.mobile-img {
+	display: grid;
+	grid-template-columns: 120px;
+	grid-template-rows: repeat(4,150px);
+	grid-template-areas: 
+	"wmob1"
+	"wmob2"
+	"wmob3"
+	"but-mob";
+}
+
+.who-mob1 {
+	display: grid;
+	grid-area: wmob1;
+
+}
+.who-mob2 {
+	display: grid;
+	grid-area: wmob2;
+}
+.who-mob3 {
+	display: grid;
+	grid-area: wmob3;
+}
+.who-whales .but-mob .myButton-mobile {
+	grid-area: but-mob;
+}
+.who-whales p{
+	display: none;
+}
+/* 
+.family-container p {
+	margin: auto;
+}
+.link-who {
+	display: none;
+}
+.who-whales {
+	width: 100%;
+	margin: auto;
+}
+
+.mobile-img {
+	display: grid;
+	width: 100vw;
+	margin: auto;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,1fr);
+	grid-template-areas:
+	"wmob1 but-mob wmob2 "
+	".   wmob3   .";
+}*/
+
+/*
+
+
+ */
+/* termina pages quienes somos */
+}
+	
+
+/* termina excursiones */
