@@ -21,15 +21,18 @@
             p{
                 font-size: 25px;
                 width: 50vw;
-                color: #5F9DF7;
+                color: $azul-claro;
                 text-align: center;
             }
             b{
                 font-size: 35px;
-                color: #1746A2
+                color: $azul-oscuro;
             }
             .img-corolla-mob {
                 display: none;
+            }
+            .div-carinput {
+                margin: auto;
             }
     }
 }
@@ -43,11 +46,11 @@
         .focus-text {
             font-size: 25px;
             width: 50vw;
-            color: #5F9DF7;
+            color: $azul-claro;
             text-align: center;
                 b{
                     font-size: 35px;
-                    color: #1746A2
+                    color: $azul-oscuro;
                 }
         }
         .img-focus-mob {

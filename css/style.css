@@ -16,7 +16,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10%; }
+  padding: 5px 10%;
+  background-color: #FFF7E9; }
   header .logoimg {
     height: 125px;
     width: auto;
@@ -420,6 +421,8 @@ footer .redes-container {
     color: #1746A2; }
   .div-corola .div-corola2 .img-corolla-mob {
     display: none; }
+  .div-corola .div-corola2 .div-carinput {
+    margin: auto; }
 
 .focus-img {
   width: 100%;
@@ -819,7 +822,7 @@ h2 {
       margin: 15px 0; }
   .div-focus {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center; }
     .div-focus .div-carinput {
       margin: 15px 0; }
@@ -1102,8 +1105,8 @@ h2 {
           text-align: center; }
     .sect-mobile .mobile-transfer {
       grid-area: mtransf;
-      display: flex;
       margin-bottom: 30px;
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }

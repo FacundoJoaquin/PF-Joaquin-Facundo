@@ -16,8 +16,7 @@
         }
         .div-form {
                 form{
-                    display: flex;
-                    flex-direction: column;
+                    @include column;
                         .but-mob {
                             display: none;
                         }
@@ -49,7 +48,7 @@
     margin-right: 33vw;
 	width: 100%;
         .div-datos-texto {
-            color: #5F9DF7;
+            color: $azul-claro;
             font-size: 1.5em;
             margin-bottom: 2em;
             margin-left: 8vw;
