@@ -367,20 +367,44 @@ footer .redes-container {
       font-size: 20px;
       width: 300px;
       height: 100%;
-      background-color: #dfdfdf;
+      background-color: #f8f8f8;
       margin: 5px;
-      border: 1px solid black; }
+      border: none;
+      border-radius: 8px; }
+      .contact-section .div-form form input:hover {
+        border: 1px solid #5F9DF7;
+        outline-color: #5F9DF7; }
+      .contact-section .div-form form input:focus {
+        transform: scale(1.1);
+        transition: 1s ease;
+        outline-color: #1746A2; }
     .contact-section .div-form form select {
       font-size: 20px;
-      background-color: #dfdfdf;
+      background-color: #f8f8f8;
       margin: 5px;
-      border: 1px solid black; }
+      border: none;
+      border-radius: 8px; }
+      .contact-section .div-form form select:hover {
+        border: 1px solid #5F9DF7;
+        outline-color: #5F9DF7; }
+      .contact-section .div-form form select:focus {
+        transform: scale(1.1);
+        transition: 1s ease;
+        outline-color: #1746A2; }
     .contact-section .div-form form textarea {
       font-size: 20px;
-      background-color: #dfdfdf;
+      background-color: #f8f8f8;
       margin: 5px;
-      border: 1px solid black;
-      resize: none; }
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 15px; }
+      .contact-section .div-form form textarea:hover {
+        border: 1px solid #5F9DF7;
+        outline-color: #5F9DF7; }
+      .contact-section .div-form form textarea:focus {
+        transform: scale(1.1);
+        transition: 1s ease;
+        outline-color: #1746A2; }
 
 .section-info {
   margin-right: 33vw;
