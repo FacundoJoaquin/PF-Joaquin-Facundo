@@ -37,7 +37,7 @@
 }
 .info {
     display: flex;
-	height: 200px;
+	@include tamaño(100%, 200px);
 	overflow: hidden;
 	margin-top: 30px;
 	border-bottom: 1px solid #000;
@@ -100,13 +100,12 @@
     gap: 5px;
 }
 .card-index {
-    width: 400px;
+    @include tamaño(400px, 100%);
     background: radial-gradient(#111 50%, #000 100%);
     overflow: hidden;
     position: relative;
         .card-img-ind {
-            width: 100%;
-            height: 500px;
+            @include tamaño (100%, 500px);
             object-fit: cover;
             transform: scale(1.3);
             transition: all 0.3s ease-in-out;
@@ -193,8 +192,7 @@
             font-weight: 600;
         }
         .infoo {
-            width: 100%;
-            height: 100vh;
+            @include tamaño(100%, 100vh);
             padding: 30px;
             gap: 10px;
             display: flex;
@@ -235,8 +233,7 @@
                             border-radius: 5px;
                             margin: 0 10px;
                                 &:first-child , &:nth-child(2) {
-                                    width: 140px;
-                                    height: 35px;
+                                    @include tamaño(140px, 35px);
                                 }
                                 &:nth-child(3) {
                                     width: 200px;
@@ -283,18 +280,21 @@
                     }
                 &:first-child{
                     grid-area: cl1;
-                    @include column;                    align-items: center;
+                    @include column;                    
+                    align-items: center;
                     margin: auto;
                     font-size: 1.5em;
                 }
                 &:nth-child(2){
                     grid-area: cl2;
-                    @include column;                    align-items: center;
+                    @include column;                    
+                    align-items: center;
                     font-size: 1.5em;
                 }
                 &:last-child{
                     grid-area: cl3;
-                    @include column;                    align-items: center;
+                    @include column;                    
+                    align-items: center;
                     font-size: 1.5em;
                 }
                 p{

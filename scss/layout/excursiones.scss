@@ -8,9 +8,8 @@
     margin-bottom: 1.5em;
 }
 .excursion-section {
-    width: 100%;
+    @include tamaño (100%, 100%);
 	display: grid;
-	height: 100%;
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: repeat(2,1fr);
 	justify-items: center;

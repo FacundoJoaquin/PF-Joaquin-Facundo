@@ -10,8 +10,7 @@
         .contact-div {
             width: 50%;
                 iframe {
-                    height: 100%;
-                    width: 100%;
+                    @include tamaño(100%, 100%);
                 }
         }
         .div-form {
@@ -22,8 +21,7 @@
                         }
                         input {
                             font-size: 20px;
-                            height: 100%;
-                            width: 300px;
+                            @include tamaño(300px, 100%);
                             background-color: #dfdfdf;
                             margin: 5px;
                             border: 1px solid black;

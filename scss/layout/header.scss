@@ -32,4 +32,9 @@ header {
                         color: $azul-oscuro
                     }
     }
+    .contenedor {
+        #menu, #menu-check {
+            display: none;
+        }
+    }
 }

@@ -40,6 +40,8 @@ header {
     transform: scale(1.1); }
     header li:hover a {
       color: #1746A2; }
+  header .contenedor #menu, header .contenedor #menu-check {
+    display: none; }
 
 footer .borde-footer img {
   width: 100%;
@@ -61,8 +63,8 @@ footer .redes-container {
     justify-content: center;
     gap: 2rem; }
     footer .redes-container .redes-logos .redes-div {
-      height: 7.5rem;
       width: 7.5rem;
+      height: 7.5rem;
       border-radius: 50%;
       background-color: white;
       border: 2px solid #111;
@@ -109,6 +111,7 @@ footer .redes-container {
 
 .info {
   display: flex;
+  width: 100%;
   height: 200px;
   overflow: hidden;
   margin-top: 30px;
@@ -166,6 +169,7 @@ footer .redes-container {
 
 .card-index {
   width: 400px;
+  height: 100%;
   background: radial-gradient(#111 50%, #000 100%);
   overflow: hidden;
   position: relative; }
@@ -186,6 +190,7 @@ footer .redes-container {
     padding: 15px;
     text-align: center;
     color: #fff;
+    /* color de la letra */
     font-size: 18px; }
     .card-index .hidden h3 {
       font-weight: 700;
@@ -201,6 +206,7 @@ footer .redes-container {
     .card-index .hidden a {
       color: #fff;
       background: #5F9DF7;
+      /* color del boton */
       display: inline-block;
       padding: 7px 25px;
       text-decoration: none;
@@ -350,8 +356,8 @@ footer .redes-container {
   .contact-section .contact-div {
     width: 50%; }
     .contact-section .contact-div iframe {
-      height: 100%;
-      width: 100%; }
+      width: 100%;
+      height: 100%; }
   .contact-section .div-form form {
     display: flex;
     flex-direction: column; }
@@ -359,8 +365,8 @@ footer .redes-container {
       display: none; }
     .contact-section .div-form form input {
       font-size: 20px;
-      height: 100%;
       width: 300px;
+      height: 100%;
       background-color: #dfdfdf;
       margin: 5px;
       border: 1px solid black; }
@@ -453,13 +459,12 @@ footer .redes-container {
 
 .excursion-section {
   width: 100%;
-  display: grid;
   height: 100%;
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
-  grid-template-areas: "card1 card1 card2 card2 card3 card3"
- "card4 card4 card4 card5 card5 card5"; }
+  grid-template-areas: "card1 card1 card2 card2 card3 card3" "card4 card4 card4 card5 card5 card5"; }
 
 .card1 {
   grid-area: card1;
@@ -865,8 +870,7 @@ h2 {
       grid-template-columns: repeat(2, min-content);
       grid-template-rows: repeat(2, min-content);
       gap: 15px;
-      grid-template-areas: "but-mob but-mob"
- "m1 m3"; }
+      grid-template-areas: "but-mob but-mob" "m1 m3"; }
       .who-whales .mobile-img .who-mob1 {
         grid-area: m1;
         align-self: flex-start; }
@@ -970,8 +974,7 @@ h2 {
       display: grid;
       grid-template-columns: repeat(3, 70px);
       grid-template-rows: repeat(2, 70px);
-      grid-template-areas: "imgc2 . imgc3"
- ". imgc1 .";
+      grid-template-areas: "imgc2 . imgc3" ". imgc1 .";
       gap: 10px; }
       .div-corola .div-corola2 .img-corolla-mob .imgc1 {
         grid-area: imgc1;
@@ -992,8 +995,7 @@ h2 {
       grid-template-columns: repeat(3, 70px);
       grid-template-rows: repeat(2, 70px);
       gap: 10px;
-      grid-template-areas: "imgf1 . imgf3"
- ". imgf2 .";
+      grid-template-areas: "imgf1 . imgf3" ". imgf2 .";
       grid-area: img-focus;
       /**div de imagenes*/ }
       .div-focus .img-focus-mob .imgf1 {
@@ -1012,11 +1014,7 @@ h2 {
     display: grid;
     grid-template-rows: 300px;
     grid-template-rows: repeat(5, max-content);
-    grid-template-areas: "mwhal"
- "msnork"
- "mtrek"
- "mping"
- "mtransf"; }
+    grid-template-areas: "mwhal" "msnork" "mtrek" "mping" "mtransf"; }
     .sect-mobile .mobile-whales {
       grid-area: mwhal;
       display: flex;
