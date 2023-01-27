@@ -258,6 +258,34 @@
                 }
         }
 }
+.family-galery {
+    @include column;
+    align-items: center;
+        .box-img {
+            &:first-child , &:nth-child(2), &:nth-child(6){
+                display: none
+            }
+            &:nth-child(3) , &:nth-child(4) , &:nth-child(5){
+                padding: 15px;
+                margin: 0 20px;
+                width: 100%;
+                    p{
+                        font-size: 1rem;
+                    }
+            } 
+        }
+        .mobile-img {
+            display: flex;
+            gap: 10px;
+        }
+        .but-mob {
+            display: block;
+        }
+}
+.h1-family {
+    text-align: center;
+    color: $azul-oscuro;
+}
 .who-whales {
     @include column;
     .who-whales1 {
@@ -298,18 +326,28 @@
 }
 @media (max-width: 500px) {
     .pie {
-        display: none;
-    }
-    .footer-mob {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        .footer-img {
-            img {
-                width: 100px;
+        width: 100%;
+            .borde-footer {
+                img {
+                    width: 100%;
+                }
             }
-        }
+            .redes-container {
+                height: 200px;
+                h4{
+                    font-size: 2rem;
+                }
+                .redes-logos {
+                    .redes-div {
+                        @include tamaño (3.75rem, 3.75rem);
+                        img {
+                            @include tamaño(50%,50%);
+                        }
+                    }
+                }
+            }
     }
+
 }
 @media (max-width: 320px) {
     .pie {
@@ -451,7 +489,7 @@
     
 }
 .div-focus {
-    
+
     width: 100vw;
         .focus-text {
             font-size: 14px;
