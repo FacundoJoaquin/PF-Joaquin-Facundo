@@ -1,0 +1,98 @@
+.h1-who {
+    font-size: 25px;
+    color: $azul-oscuro;
+    text-align: center;
+}
+
+.family-container {
+    display: flex;
+
+    .family-mob {
+        display: none;
+    }
+
+    p {
+        width: 100%;
+        font-size: 1.5em;
+        margin: auto;
+        margin-left: 10px;
+        color: $azul-claro;
+        text-align: center;
+
+        a {
+            color: $azul-oscuro;
+        }
+    }
+}
+
+.who-whales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        font-size: 1.5em;
+        color: $azul-claro;
+        text-align: center;
+    }
+
+}
+.h1-family {
+    text-align: center;
+    color: $azul-oscuro;
+    font-size: 2rem;
+}
+.family-galery {
+    padding: 0 10px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,250px);
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+        .but-mob {
+            display: none;
+        }
+        .mobile-img {
+            display: none;
+        }
+        .box-img {
+            &:first-child {
+                grid-column-start: span 2;
+            }
+            &:nth-child(2) {
+                grid-row-start: span 2;
+            }
+            &:nth-child(3) {
+                grid-row-start: span 2;
+            }
+            &:nth-child(4) {
+                padding: 10px;
+                box-shadow: 0 0 50px #ccc;
+                border-radius: 10px;
+                p {
+                    font-family: $tipografia-principal;
+                    color: $azul-claro;
+                    text-align: center;
+                    font-size: 18px;
+                        a{
+                            color: $azul-oscuro;
+                            &:hover {
+                                text-decoration: underline $naranja;
+                            }
+                        }
+                }
+            }
+            
+            figure {
+                @include tamaño (100%, 100%);
+                    img {
+                        @include tamaño (100%, 100%);
+                        object-fit: cover;
+                    }
+            }
+        }
+}
+
