@@ -40,8 +40,6 @@ header {
     transform: scale(1.1); }
     header li:hover a {
       color: #1746A2; }
-  header .contenedor #menu, header .contenedor #menu-check {
-    display: none; }
 
 footer .borde-footer img {
   width: 100%;
@@ -266,7 +264,7 @@ footer .redes-container {
 .fast-ask {
   margin: 30px 0; }
   .fast-ask .ask {
-    height: 60px;
+    height: 100px;
     background-color: #072340;
     display: flex;
     align-items: center;
@@ -290,9 +288,12 @@ footer .redes-container {
         margin: 0 10px; }
         .fast-ask .ask form input:first-child, .fast-ask .ask form input:nth-child(2) {
           width: 140px;
-          height: 35px; }
+          height: 35px;
+          border: none; }
         .fast-ask .ask form input:nth-child(3) {
-          width: 200px; }
+          width: 200px;
+          height: 35px;
+          border: none; }
         .fast-ask .ask form input:last-child {
           width: 80px;
           margin-right: 30px; }
