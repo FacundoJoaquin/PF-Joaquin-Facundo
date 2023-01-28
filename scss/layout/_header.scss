@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: $beige;
+    .logoimg {
+        height: 125px;
+        width: auto;
+        cursor: pointer;
+    }
+    .logoimg:hover {
+        transform: scale(1.1);
+        transition: 1.5s;
+    }
+    .navlinks {
+        display: flex;
+        flex-wrap: nowrap;
+            li {
+                display: inline-block;
+                padding: 0 10px;
+                    a{
+                        font-size: 25px;
+                        text-decoration: none;
+                        color: $azul-claro;
+                        font-family: $tipografia-secundaria;
+                    }
+            }
+    }       li:hover {
+                transform: scale(1.1);
+                    a{
+                        color: $azul-oscuro
+                    }
+    }
+}
