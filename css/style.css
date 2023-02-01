@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/ardeco");
 @import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Dancing+Script&display=swap");
 * {
@@ -402,8 +401,7 @@ footer .redes-container {
   .section-info .div-datos-texto {
     color: #5F9DF7;
     font-size: 1.5em;
-    margin-bottom: 2em;
-    margin-left: 8vw; }
+    margin: 15px 0 2em 20%; }
     .section-info .div-datos-texto .ubic-dates {
       display: flex;
       gap: 10px;
@@ -736,17 +734,93 @@ h2 {
   justify-content: center;
   margin-bottom: 50px; }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+  .family-galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .family-galery .box-img:first-child, .family-galery .box-img:nth-child(2) {
+      display: none; }
+    .family-galery .box-img:nth-child(4) {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: none; }
+    .family-galery .box-img:nth-child(3), .family-galery .box-img:nth-child(5) {
+      width: 100%; }
   header {
     display: flex;
     flex-direction: column;
     width: 100%; }
     header .navlinks {
+      width: 100%;
       display: flex;
       justify-content: center;
       flex-wrap: wrap; }
       header .navlinks li a {
         font-size: 18px; }
+  .excursion-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .excursion-section .card1 {
+      width: 80%;
+      height: 100%; }
+      .excursion-section .card1 div:first-child img {
+        width: 100%;
+        height: 100%; }
+      .excursion-section .card1 .datos a {
+        color: #1746A2;
+        text-decoration: underline #FF731D; }
+      .excursion-section .card1:hover {
+        transform: none; }
+    .excursion-section .card2 {
+      width: 80%;
+      height: 100%; }
+      .excursion-section .card2 div:first-child img {
+        width: 100%;
+        height: 100%; }
+      .excursion-section .card2 .datos a {
+        color: #1746A2;
+        text-decoration: underline #FF731D; }
+      .excursion-section .card2:hover {
+        transform: none; }
+    .excursion-section .card3 {
+      width: 80%;
+      height: 100%; }
+      .excursion-section .card3 div:first-child img {
+        width: 100%;
+        height: 100%; }
+      .excursion-section .card3 .datos a {
+        color: #1746A2;
+        text-decoration: underline #FF731D; }
+      .excursion-section .card3:hover {
+        transform: none; }
+    .excursion-section .card4 {
+      width: 80%;
+      height: 100%; }
+      .excursion-section .card4 div:first-child img {
+        width: 100%;
+        height: 100%; }
+      .excursion-section .card4 .datos a {
+        color: #1746A2;
+        text-decoration: underline #FF731D; }
+      .excursion-section .card4:hover {
+        transform: none; }
+    .excursion-section .card5 {
+      width: 80%;
+      height: 100%; }
+      .excursion-section .card5 div:first-child img {
+        width: 100%;
+        height: 100%; }
+      .excursion-section .card5 .datos a {
+        color: #1746A2;
+        text-decoration: underline #FF731D; }
+      .excursion-section .card5:hover {
+        transform: none; } }
+
+@media (max-width: 768px) {
   .pie {
     width: 100%; }
   .footer-mob {
@@ -768,13 +842,6 @@ h2 {
       width: 100%; }
   .h2-i {
     font-size: 2rem; }
-  /* .excursiones-cards {
-    @include column;
-    .card-index {
-        @include tamaño(100%, 300px);
-        margin-bottom: 10px;
-    }
-} */
   .mobile {
     display: flex;
     flex-direction: column;
@@ -790,7 +857,7 @@ h2 {
       .mobile .datos-mobile h3 {
         color: #1746A2;
         font-weight: 800;
-        font-size: 1.5rem; }
+        font-size: 1.2rem; }
       .mobile .datos-mobile p {
         text-align: center;
         color: #5F9DF7;
@@ -805,75 +872,21 @@ h2 {
     width: 100%; }
   .fast-ask {
     display: none; }
-  .clientes .cliente {
-    display: flex;
-    justify-content: center; }
-    .clientes .cliente div:first-child {
-      width: 50%; }
-      .clientes .cliente div:first-child p {
-        text-align: center; }
-    .clientes .cliente div:nth-child(2) {
-      width: 50%; }
-      .clientes .cliente div:nth-child(2) p {
-        text-align: center; }
-    .clientes .cliente div:last-child {
-      display: none; }
-  .excursion-section {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .excursion-section .card1 {
-      width: 80%;
-      height: 100%; }
-      .excursion-section .card1 div:first-child img {
-        width: 100%;
-        height: 100%; }
-      .excursion-section .card1 .datos a {
-        color: #1746A2; }
-      .excursion-section .card1:hover {
-        pointer-events: none; }
-    .excursion-section .card2 {
-      width: 80%;
-      height: 100%; }
-      .excursion-section .card2 div:first-child img {
-        width: 100%;
-        height: 100%; }
-      .excursion-section .card2 .datos a {
-        color: #1746A2; }
-      .excursion-section .card2:hover {
-        pointer-events: none; }
-    .excursion-section .card3 {
-      width: 80%;
-      height: 100%; }
-      .excursion-section .card3 div:first-child img {
-        width: 100%;
-        height: 100%; }
-      .excursion-section .card3 .datos a {
-        color: #1746A2; }
-      .excursion-section .card3:hover {
-        pointer-events: none; }
-    .excursion-section .card4 {
-      width: 80%;
-      height: 100%; }
-      .excursion-section .card4 div:first-child img {
-        width: 100%;
-        height: 100%; }
-      .excursion-section .card4 .datos a {
-        color: #1746A2; }
-      .excursion-section .card4:hover {
-        pointer-events: none; }
-    .excursion-section .card5 {
-      width: 80%;
-      height: 100%; }
-      .excursion-section .card5 div:first-child img {
-        width: 100%;
-        height: 100%; }
-      .excursion-section .card5 .datos a {
-        color: #1746A2; }
-      .excursion-section .card5:hover {
-        pointer-events: none; }
+  .clientes {
+    border-top: 1px solid #000; }
+    .clientes .cliente {
+      display: flex;
+      justify-content: center; }
+      .clientes .cliente div:first-child {
+        width: 50%; }
+        .clientes .cliente div:first-child p {
+          text-align: center; }
+      .clientes .cliente div:nth-child(2) {
+        width: 50%; }
+        .clientes .cliente div:nth-child(2) p {
+          text-align: center; }
+      .clientes .cliente div:last-child {
+        display: none; }
   .contact-section .contact-div {
     display: none; }
   .contact-section .div-form {
@@ -883,7 +896,8 @@ h2 {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-left: 0%; }
     .section-info .div-datos-texto .ubic-dates {
       width: 100%;
       display: flex;
@@ -1003,12 +1017,11 @@ h2 {
           width: 50%;
           height: 50%; } }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .d-baner img {
     width: 100%; }
   .h1-ind {
-    font-size: 16px;
-    display: none; }
+    font-size: 20px; }
   .info {
     width: 100%; }
     .info .info1 {
@@ -1021,7 +1034,8 @@ h2 {
   .infoo img {
     width: 100%; }
   .h2-i {
-    display: none; }
+    font-size: 18px;
+    padding: 5px; }
   .excursiones-cards {
     display: none; }
   .mobile {
@@ -1038,12 +1052,12 @@ h2 {
       .mobile .img-mobile .img-m {
         display: flex;
         justify-content: space-around; }
-        .mobile .img-mobile .img-m img {
-          width: 32%; }
     .mobile .datos-mobile {
       display: flex;
       flex-direction: column;
       align-items: center; }
+      .mobile .datos-mobile img {
+        margin-top: 15px; }
       .mobile .datos-mobile h3 {
         color: #1746A2; }
       .mobile .datos-mobile p {
@@ -1056,7 +1070,8 @@ h2 {
     gap: 10px; }
     .cliente div p {
       width: 100vw;
-      font-size: 18px; }
+      font-size: 18px;
+      color: red; }
   /* empieza autos */
   .h1-cars {
     display: none; }

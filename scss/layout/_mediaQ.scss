@@ -1,8 +1,26 @@
-@media (max-width: 768px) {
+@media (max-width:1000px) {
+    .family-galery {
+        @include column;
+        align-items: center;
+        .box-img {
+            &:first-child , &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(4) {
+                width: 100%;
+                border-radius: 10px;
+                box-shadow: none;
+            }
+            &:nth-child(3) , &:nth-child(5) {
+                width: 100%;
+            }
+        }
+    }
     header {
         @include column;
         width: 100%;
     .navlinks {
+        width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -12,6 +30,100 @@
             }
         }}
 }
+.excursion-section {
+    width: 100%;
+    @include column;
+    align-items: center;
+    justify-content: center;
+        .card1 {
+            @include tamaño(80%,100%);
+                div:first-child {
+                    img {
+                        @include tamaño(100%,100%);
+                    }
+                }
+                .datos {
+                    a {
+                        color: $azul-oscuro;
+                        text-decoration: underline $naranja;
+                    }
+                }
+        &:hover{
+            transform: none;
+        }
+}        
+        .card2 {
+            @include tamaño(80%,100%);
+                div:first-child {
+                    img {
+                        @include tamaño(100%,100%);
+                    }
+                }
+                .datos {
+                    a {
+                        color: $azul-oscuro;
+                        text-decoration: underline $naranja;
+                    }
+                }
+                &:hover{
+                    transform: none;
+                }
+}        
+        .card3 {
+            @include tamaño(80%,100%);
+                div:first-child {
+                    img {
+                        @include tamaño(100%,100%);
+                    }
+                }
+                .datos {
+                    a {
+                        color: $azul-oscuro;
+                        text-decoration: underline $naranja;
+                    }
+                }
+                &:hover{
+                    transform: none;
+                }
+}        
+        .card4 {
+            @include tamaño(80%,100%);
+                div:first-child {
+                    img {
+                        @include tamaño(100%,100%);
+                    }
+                }
+                .datos {
+                    a {
+                        color: $azul-oscuro;
+                        text-decoration: underline $naranja;
+                    }
+                }
+                &:hover{
+                    transform: none;
+                }
+}        
+        .card5 {
+            @include tamaño(80%,100%);
+                div:first-child {
+                    img {
+                        @include tamaño(100%,100%);
+                    }
+                }
+                .datos {
+                    a {
+                        color: $azul-oscuro;
+                        text-decoration: underline $naranja;
+                    }
+                }
+                &:hover{
+                    transform: none;
+                }
+        }
+}
+}
+@media (max-width: 768px) {
+
 .pie {
     width: 100%;
 }
@@ -41,13 +153,7 @@ display: none;
 .h2-i {
     font-size: 2rem;
 }
-/* .excursiones-cards {
-    @include column;
-    .card-index {
-        @include tamaño(100%, 300px);
-        margin-bottom: 10px;
-    }
-} */
+
 .mobile {
     @include column;
     align-items: center;
@@ -62,7 +168,7 @@ display: none;
                 h3 {
                     color: $azul-oscuro;
                     font-weight: 800;
-                    font-size: 1.5rem;
+                    font-size: 1.2rem;
                 }
                 p{
                     text-align: center;
@@ -91,6 +197,7 @@ display: none;
     display: none;
 }
 .clientes {
+    border-top: 1px solid #000;
     .cliente {
         display: flex;
         justify-content: center;
@@ -111,92 +218,7 @@ display: none;
             }
     }
 }
-.excursion-section {
-    width: 100%;
-    @include column;
-    align-items: center;
-    justify-content: center;
-        .card1 {
-            @include tamaño(80%,100%);
-                div:first-child {
-                    img {
-                        @include tamaño(100%,100%);
-                    }
-                }
-                .datos {
-                    a {
-                        color: $azul-oscuro
-                    }
-                }
-        &:hover{
-            pointer-events: none;
-        }
-}        
-        .card2 {
-            @include tamaño(80%,100%);
-                div:first-child {
-                    img {
-                        @include tamaño(100%,100%);
-                    }
-                }
-                .datos {
-                    a {
-                        color: $azul-oscuro
-                    }
-                }
-                &:hover{
-                    pointer-events: none;
-                }
-}        
-        .card3 {
-            @include tamaño(80%,100%);
-                div:first-child {
-                    img {
-                        @include tamaño(100%,100%);
-                    }
-                }
-                .datos {
-                    a {
-                        color: $azul-oscuro
-                    }
-                }
-                &:hover{
-                    pointer-events: none;
-                }
-}        
-        .card4 {
-            @include tamaño(80%,100%);
-                div:first-child {
-                    img {
-                        @include tamaño(100%,100%);
-                    }
-                }
-                .datos {
-                    a {
-                        color: $azul-oscuro
-                    }
-                }
-                &:hover{
-                    pointer-events: none;
-                }
-}        
-        .card5 {
-            @include tamaño(80%,100%);
-                div:first-child {
-                    img {
-                        @include tamaño(100%,100%);
-                    }
-                }
-                .datos {
-                    a {
-                        color: $azul-oscuro
-                    }
-                }
-                &:hover{
-                    pointer-events: none;
-                }
-        }
-}
+
 .contact-section {
     .contact-div {
         display: none;
@@ -211,6 +233,7 @@ display: none;
 		flex-wrap: nowrap;
         justify-content: center;
         align-items:center;
+        margin-left: 0%;
             .ubic-dates {
                 width: 100%;
                 @include column;
@@ -379,7 +402,8 @@ display: none;
     }
 
 }
-@media (max-width: 320px) {
+
+@media (max-width: 400px) {
 
 .d-baner {
     img {
@@ -387,8 +411,7 @@ display: none;
     }
 }
 .h1-ind {
-    font-size: 16px;
-    display: none;
+    font-size: 20px;
 }
 .info {
     width: 100%;
@@ -411,7 +434,8 @@ display: none;
     }
 }
 .h2-i {
-    display: none;
+    font-size: 18px;
+    padding: 5px;
 }
 .excursiones-cards {
     display: none;
@@ -433,14 +457,14 @@ display: none;
         .img-m {
             display: flex;
             justify-content: space-around;
-            img {
-                width: 32%;
-            }
         }
 	}
     .datos-mobile {
         @include column;
 		align-items: center;
+        img {
+            margin-top: 15px;
+        }
         h3 {
             color: $azul-oscuro;
         }
@@ -462,6 +486,7 @@ display: none;
         p {
             width: 100vw;
             font-size: 18px;
+            color: red;
         }
     }
 }
